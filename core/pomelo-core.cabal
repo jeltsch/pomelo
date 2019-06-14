@@ -1,0 +1,51 @@
+cabal-version: 2.4
+name:          pomelo-core
+version:       0.0.0.0
+build-type:    Simple
+license:       BSD-3-Clause
+license-file:  LICENSE
+copyright:     © 2019 Wolfgang Jeltsch
+author:        Wolfgang Jeltsch
+maintainer:    wolfgang-it@jeltsch.info
+stability:     provisional
+homepage:      https://temporal-pomelo.com/
+bug-reports:   https://github.com/jeltsch/pomelo/issues
+package-url:   https://hackage.haskell.org/package/pomelo-core-0.0.0.0/pomelo-core-0.0.0.0.tar.gz
+synopsis:      Temporal programming, core constructs
+description:   Temporal programming makes it possible to express explicitly how
+               an interactive program behaves over time. Type membership is
+               time-dependent, and constructs for describing continuously
+               changing values, discrete events, and combinations thereof are
+               provided. Temporal programming can be seen as a form of
+               functional reactive programming (FRP), one that follows closely
+               the originaly ideas behind FRP.
+               .
+               Pomelo is a library for temporal programming with a clean
+               semantics and an efficient implementation. It features a
+               funtional approach to I/O that integrates smoothly into the
+               temporal setting.
+               .
+               This package provides the core constructs of Pomelo.
+category:      Temporal programming, FRP
+tested-with:   GHC == 8.6.5
+
+source-repository head
+
+    type:     git
+    location: https://github.com/jeltsch/pomelo.git
+    subdir:   core
+    branch:   master
+
+source-repository this
+
+    type:     git
+    location: https://github.com/jeltsch/pomelo.git
+    subdir:   core
+    tag:      pomelo-core-0.0.0.0
+
+library
+
+    default-language: Haskell2010
+    build-depends:    base >= 4.12 && < 5
+    hs-source-dirs:   src
+    ghc-options:      -Wall
