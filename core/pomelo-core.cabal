@@ -9,7 +9,7 @@ author:        Wolfgang Jeltsch
 maintainer:    wolfgang-it@jeltsch.info
 stability:     provisional
 homepage:      https://temporal-pomelo.com/
-bug-reports:   https://github.com/jeltsch/pomelo/issues
+bug-reports:   https://github.com/jeltsch/pomelo/issues/new?labels=component%3A%20core,type%3A%20bug
 package-url:   https://hackage.haskell.org/package/pomelo-core-0.0.0.0/pomelo-core-0.0.0.0.tar.gz
 synopsis:      Temporal programming, core constructs
 description:   Temporal programming makes it possible to express explicitly how
